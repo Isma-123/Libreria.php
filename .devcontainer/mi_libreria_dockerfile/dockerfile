@@ -1,0 +1,10 @@
+FROM php:8.2-apache
+
+# Instalar extensiones necesarias
+RUN docker-php-ext-install mysqli
+
+# Copiar archivos del proyecto
+COPY . /var/www/html/
+
+# Habilitar el módulo de reescritura (opcional si usas .htaccess)
+RUN a2enmod rewrite

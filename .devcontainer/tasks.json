@@ -1,0 +1,6 @@
+{
+    "tasks": {
+      "start": "apache2-foreground"
+    }
+  }
+  
